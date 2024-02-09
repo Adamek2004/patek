@@ -25,9 +25,8 @@ namespace Adventure
             CurrentRoom = rooms[0];
         }
 
-        public string Intro { get; } = @"
-How did you end up here? You don't really know. Maybe you fell, maybe someone pushed you.
-One thing is certain, you need to GET OUT OF HERE!
+        public string Intro { get; } = @" Procházím touto místností skrz velké ocelové dveře a dostal jsem se do hlavní místnosti celé lodi. Všude kolem mě jsou pracovníci, kteří plní pokyny své povinnosti při letu na Pandoru. Přicházím k oknu a z něj vidím planetu Pandora, která je poměrně ještě dost daleko.
+
 ";
     }
 }
