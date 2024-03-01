@@ -12,6 +12,11 @@ namespace Adventure.Commands
         public override void Execute(World world, params string[] @params)
         {
             Console.WriteLine($"Rozhlédl jsem se a {world.CurrentRoom.Description}");
+            if (world.CurrentRoom.Items.Count > 0 ) 
+            { 
+            Console.WriteLine("Zdá se, že se tu nachází nějaký předmět!");
+                Console.WriteLine(string.Join(", ",world.CurrentRoom.Items.Select(i=>i.Name)));
+            }
         }
     }
 }

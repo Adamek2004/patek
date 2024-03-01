@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Adventure.Items;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,13 @@ namespace Adventure.Rooms
         public override string Description => "vidím místnost, která je osvětlená jen blikajícími monitory";
 
         public override string Name => "Lobby";
+        public Lobby() 
+        {
+            Items.Add(new Window());
+        
+        
+        
+        
+        }
     }
 }
